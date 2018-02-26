@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Hangman</title>
+
+</head>
+
+<body>
+
+
+    <div class="jumbotron jumbotron-fluid bg-danger text-white">
+        <div class="container">
+            <h1 class="display-4">Hangman Game</h1>
+            <button type="button" class="btn btn-secondary" id='new-game'>New Game
+                
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>
+                    Fill in the Word
+                    <span id="word-bank"></span>
+                </h3>
+            </div>
+
+
+            <div class="col-sm-12 text-center">
+                <h3>
+                    
+                    <span id="placeholders"></span>
+                </h3>
+
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>
+                        Incorrect Letters Bank:
+                        <span id="guessed-letters"></span>
+                    </h3>
+                </div>
+                <div class="col-sm">
+                    <h3>
+                        Guesses Left:
+                        <span id="guesses-left">0</span>
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h3>
+                        Wins:
+                        <span id="wins"></span>
+                    </h3>
+                </div>
+                <div class="col-sm">
+                    <h3>
+                        Losses:
+                        <span id="losses"></span>
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+
+        <img src="./images/hangman.jpg" class="rounded float-center" alt="hangman">
+
+
+
+
+        <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
